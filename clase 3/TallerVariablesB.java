@@ -1,21 +1,21 @@
-public class TallerVariables {
-
+public class TallerVariablesB {
+    
     public static void main(String[] args) {
         
-        double d1 = 42.0, d2 = 58.5, d3 = 37.2;
-        double t1 = 0.9, t2 = 1.4, t3 = 0.8;
-        double l1 = 5.1, l2 = 6.9, l3 = 4.3;
-        double precioLitro = 1.35;
-        double masaCargakg = 1200;
-        double largo = 2.0, ancho = 1.2, alto = 1.1;
-        double p1 = 2.5, p2 = 3.0, p3 = 2.0;
-        double deprecPorkm = 0.08;
-        double volCamionM3 = 10.0;
-        double fc02 = 2.68;
+        double d1 = 35.0, d2 = 72.0, d3 = 53.0;
+        double t1 = 0.7, t2 = 1.6, t3 = 1.1;
+        double l1 = 4.4, l2 = 9.0, l3 = 6.2;
+        double precioLitro = 1.42;
+        double masaCargakg = 1450;
+        double largo = 2.2, ancho = 1.3, alto = 1.0;
+        double p1 = 3.2, p2 = 3.8, p3 = 2.7;
+        double deprecPorkm = 0.085;
+        double volCamionM3 = 12.0;
+        double fc02 = 2.64;
         double galPorlitro = 0.264172;
         double vmin = 30, vmax = 90;
         double va = 40, vb = 80, ca = 0.05, cb = 0.09;
-        double a = -0.0008, b = 0.08, c = 4.0;
+        double a = -0.0009, b = 0.09, c = 3.8;
         //paso 2 parte 1
         double v1 = d1/t1; 
         double v2 = d2/t2;

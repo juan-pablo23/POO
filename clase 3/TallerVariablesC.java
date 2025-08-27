@@ -1,21 +1,21 @@
-public class TallerVariables {
-
-    public static void main(String[] args) {
+public class TallerVariablesC {
+    
+        public static void main(String[] args) {
         
-        double d1 = 42.0, d2 = 58.5, d3 = 37.2;
-        double t1 = 0.9, t2 = 1.4, t3 = 0.8;
-        double l1 = 5.1, l2 = 6.9, l3 = 4.3;
-        double precioLitro = 1.35;
-        double masaCargakg = 1200;
-        double largo = 2.0, ancho = 1.2, alto = 1.1;
-        double p1 = 2.5, p2 = 3.0, p3 = 2.0;
-        double deprecPorkm = 0.08;
-        double volCamionM3 = 10.0;
-        double fc02 = 2.68;
+        double d1 = 50.0, d2 = 45.0, d3 = 32.0;
+        double t1 = 2.7, t2 = 0.5, t3 = 3.1;
+        double l1 = 3.4, l2 = 6.0, l3 = 8.2;
+        double precioLitro = 3.5;
+        double masaCargakg = 1999;
+        double largo = 1.2, ancho = 2.3, alto = 1.0;
+        double p1 = 5.3, p2 = 1.5, p3 = 4.4;
+        double deprecPorkm = 0.090;
+        double volCamionM3 = 14.0;
+        double fc02 = 5.64;
         double galPorlitro = 0.264172;
         double vmin = 30, vmax = 90;
         double va = 40, vb = 80, ca = 0.05, cb = 0.09;
-        double a = -0.0008, b = 0.08, c = 4.0;
+        double a = -0.0009, b = 0.09, c = 3.8;
         //paso 2 parte 1
         double v1 = d1/t1; 
         double v2 = d2/t2;
@@ -87,4 +87,5 @@ public class TallerVariables {
         double score = w1*(1/costoPorkm)+w2*kmltotal+w3*(1/co2porkm)+w4*(1/(1+σ));
         System.out.println("el score es de: "+ score);
     }
+
 }
