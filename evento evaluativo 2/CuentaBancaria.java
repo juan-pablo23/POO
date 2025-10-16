@@ -72,6 +72,6 @@ public class CuentaBancaria {
     }
 
     public String tooString() {
-        return "titular: " + titular + "Numero de cuenta: " + numeroCuenta + "saldo: " + saldo;
+        return " titular: " + titular + " Numero de cuenta: " + numeroCuenta + " saldo: " + saldo;
     }
 }
