@@ -8,6 +8,9 @@ public class Libro {
     public Libro(string titulo, string autor, int anioPublicacion, int numeroPaginas){
         this.titulo = titulo; 
         this.autor = autor; 
-
+        this.anioPublicacion = anioPublicacion;
+        this.numeroPaginas = numeroPaginas;
+        this. prestado = false; 
+        
     }
 }
