@@ -1,0 +1,54 @@
+PARTE I (Conceptual)
+1. ¿Qué es la encapsulación y por qué es importante en la Programación Orientada a Objetos?
+R// importa porque evita que los datos puedan modificarse desde afuera y solo podrá ser modificada mentiante metodos como los getters y setters
+
+2. ¿Qué diferencia hay entre un método y un constructor?
+R// el metodo sirve para realizar funciones en la clase y se ejecuta varias veces, un constructor se usa para inicializar los objetos y tiene el mismo nombre que la clase 
+
+3. ¿Por qué los atributos deben ser privados y no públicos?
+R// para que no puedan ser modificados por ninguna parte del codigo 
+
+4. ¿Qué función cumplen los getters y setters?
+R// los getters sirven para saber el valor de un solo atributo y los setters sirven para poder modificarlo 
+
+5. Verdadero o falso: “Un método setter no debe validar los datos que recibe.” Justifique.
+R// falso, si debe validarlos porque puede recibir valores incorrectos 
+
+
+PARTE II (Modelado)
+atributos
+--------------------------------------------------------------------------------------------------
+| Nombre         | Tipo De Dato | Visibilidad | Descripción                                      |
+--------------------------------------------------------------------------------------------------
+| titular        | String       | private     | es el nombre del dueño de la cuenta              |
+--------------------------------------------------------------------------------------------------
+| numeroCuenta   | String       | private     | es el numero distintivo de la cuenta             |
+--------------------------------------------------------------------------------------------------
+| saldo          | double       | private     | es la cantidad de dinero disponible en la cuenta |
+--------------------------------------------------------------------------------------------------
+| codigo         | String       | private     | es lo que identifica al producto                 |
+--------------------------------------------------------------------------------------------------
+| descripción    | String       | private     | informacion  del producto                        |
+--------------------------------------------------------------------------------------------------
+| cantidad       | int          | private     | numero de unidades del producto                  |
+--------------------------------------------------------------------------------------------------
+| precioUnitario | double       | private     | precio por unidad                                |
+--------------------------------------------------------------------------------------------------
+
+metodos 
+-----------------------------------------------------------------------------------------------------------
+| Nombre              | Parámetros        | Retorno | Descripción                                         | 
+-----------------------------------------------------------------------------------------------------------
+| depositar           | double monto      | void    | aumenta el saldo cuando el monto es correcto        |
+-----------------------------------------------------------------------------------------------------------
+| retirar             | double monto      | void    | disminuye el saldo si hay suficiente saldo          | 
+-----------------------------------------------------------------------------------------------------------
+| toString            | ninguno           | String  | proporciona toda la informacion                     |
+-----------------------------------------------------------------------------------------------------------
+| calcularSubtotal    | ninguno           | double  | retorna el valor de la cantidad de producto deseada |
+-----------------------------------------------------------------------------------------------------------
+| aplicarDescuento    | double porcentaje | void    | aplica el descueto si el valido                     |
+-----------------------------------------------------------------------------------------------------------
+| incrementarCantidad | int valor         | void    | aumenta la cantidad si su valor es valido           |
+-----------------------------------------------------------------------------------------------------------
+
