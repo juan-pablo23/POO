@@ -8,7 +8,7 @@ public class Gamer extends Computador {
 
     @Override
     public void optimizar() {
-        rendimiento += 20; // mucho más potente
+        rendimiento += 20; 
     }
 
     @Override
