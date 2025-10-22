@@ -25,7 +25,7 @@ public class Principal {
 
         // versión B
         Producto p1 = new Producto("A123", "logitech G502 Hero", 3, 187000);
-        System.out.println("El Produto Fue Creado Correctamente");
+        System.out.println("El Producto Fue Creado Correctamente");
         System.out.println(p1.tooString());
 
         p1.incrementarCantidad(3);
