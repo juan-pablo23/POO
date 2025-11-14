@@ -10,7 +10,7 @@ abstract class Elevador {
         this.plantaAlta = plantaAlta;
         this.puertaAbierta = false;
     }
-    public int getPisoActual(){
-        return pisoActual;
+    public int getPlantaActual(){
+        return plantaActual;
     }
 }
