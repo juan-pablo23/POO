@@ -28,4 +28,13 @@ abstract class Elevador {
         puertaAbierta = false;
         System.out.println("Puerta cerrada en la planta" + plantaActual);
     }
+    public abstract void moverA(int plantaDestino);
+
+    @Override
+    public String toString(){
+         return getClass().getSimpleName() +
+               " [plantaActual=" + plantaActual +
+               ", rango=" + plantaBaja + " a " + plantaAlta +
+               ", puertaAbierta=" + puertaAbierta + "]";
+    }
 }
