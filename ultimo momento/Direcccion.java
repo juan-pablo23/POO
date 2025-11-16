@@ -1,0 +1,1 @@
+public enum Direcccion{SUBIR, BAJAR, QUIETO}
