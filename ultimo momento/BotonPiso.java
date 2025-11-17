@@ -9,7 +9,7 @@ public class BotonPiso extends Boton {
     @Override
     public void presionar(ControlElevador control) {
         iluminado = true;
-        control.solucitudDesdePiso(piso, direccion);
+        control.solicitudDesdePiso(piso, direccion);
     }
 
     @Override

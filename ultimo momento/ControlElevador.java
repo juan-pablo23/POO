@@ -49,10 +49,10 @@ public class ControlElevador {
 
     private int obtenerMasCercano(int desde) {
         int mejor = -1;
-        int mejorDist = Integrer.MAX_VALUE;
+        int mejorDist = Integer.MAX_VALUE;
         for (int p : solicitudes) {
             if (p < 1 || p > pisoMaximo) continue;
-            int d = math.abs(p - desde);
+            int d = Math.abs(p - desde);
             if (d < mejorDist) { mejorDist = d; mejor = p; }
         }
         return mejor;
