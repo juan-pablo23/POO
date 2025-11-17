@@ -23,7 +23,7 @@ public class Elevador {
 
     public void irAPiso(int destino) {
         if (destino == pisoActual) dereccion = Direccion.QUIETO;
-        else direccion = (detino > pisoACtual) ? Direccion.SUBIR : direccion.BAJAR;
+        else direccion = (detino > pisoACtual) ? Direccion.SUBIR : Direccion.BAJAR;
     }
 
     public void llegarYAbrir() {
