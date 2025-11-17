@@ -1,6 +1,6 @@
 public class Elevador {
     private int id;
-    private int pisoACtual;
+    private int pisoActual;
     private Direccion direccion;
     private Puerta puerta;
 
@@ -10,24 +10,24 @@ public class Elevador {
         this. direccion = Direccion.QUIETO;
         this. puerta  = new Puerta();
     }
-    public int obtenerPisoACtual() { return pisoACtual; }
+    public int obtenerPisoActual() { return pisoActual; }
     public Direccion obteneDireccion() { return direccion; }
     public Puerta obtenerPuerta() { return puerta; }
 
     public void moberUnPiso() {
         if (direccion == Direccion.SUBIR) pisoActual++;
-        else if (direccion == Direccion.BAJAR) pisoACtual--;
+        else if (direccion == Direccion.BAJAR) pisoActual--;
 
         System.out.println("Elevador" + id + "moviéndose al piso" + pisoActual);
     }
 
     public void irAPiso(int destino) {
         if (destino == pisoActual) dereccion = Direccion.QUIETO;
-        else direccion = (detino > pisoACtual) ? Direccion.SUBIR : Direccion.BAJAR;
+        else direccion = (detino > pisoActual) ? Direccion.SUBIR : Direccion.BAJAR;
     }
 
     public void llegarYAbrir() {
-        System.out.println("Elevador " + id + "llegó al piso" + pisoACtual);
+        System.out.println("Elevador " + id + "llegó al piso" + pisoActual);
         puerta.abrir();
     }
 
