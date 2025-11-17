@@ -23,7 +23,7 @@ public class ControlElevador {
 
     public void paso() {
         if (solicitudes.isEmpty()) {
-            System.out.println("Sin solicitudes. Elevador quiero");
+            System.out.println("Sin solicitudes. Elevador quieto");
             elevador.irAPiso(elevador.obtenerPisoActual());
             return;
         }
@@ -38,7 +38,7 @@ public class ControlElevador {
             solicitudes.remove(destino);
             elevador.obtenerPuerta().cerrar();
         } else {
-            elevador.moberUnPiso();
+            elevador.moverUnPiso();
             if (solicitudes.contains(elevador.obtenerPisoActual())) {
                 elevador.llegarYAbrir();
                 solicitudes.remove(elevador.obtenerPisoActual());
@@ -49,8 +49,9 @@ public class ControlElevador {
 
     private int obtenerMasCercano(int desde) {
         int mejor = -1;
-        int mejorDist = integrer.MAX_VALUE;
+        int mejorDist = Integrer.MAX_VALUE;
         for (int p : solicitudes) {
+            if (p < 1 || p > pisoMaximo) continue;
             int d = math.abs(p - desde);
             if (d < mejorDist) { mejorDist = d; mejor = p; }
         }

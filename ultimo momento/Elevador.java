@@ -14,7 +14,7 @@ public class Elevador {
     public Direccion obteneDireccion() { return direccion; }
     public Puerta obtenerPuerta() { return puerta; }
 
-    public void moberUnPiso() {
+    public void moverUnPiso() {
         if (direccion == Direccion.SUBIR) pisoActual++;
         else if (direccion == Direccion.BAJAR) pisoActual--;
 
