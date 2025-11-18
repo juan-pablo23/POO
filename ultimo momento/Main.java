@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         Elevador elevador = new Elevador(1, 1);
         ControlElevador control = new ControlElevador(elevador, 10);
-
+    
         BotonPiso boton5 = new BotonPiso(5, Direccion.SUBIR);
         BotonInterno boton8 = new BotonInterno(8);
 
